@@ -87,4 +87,4 @@ class StatisticHandler(SessionMixin, tornado.web.RequestHandler):
             # if count equal to 0 than there is no rows in a table
             if total_count != 0:
                 persent = math.floor(total_sum/(total_sum+total_count)*100)
-            self.write({'sum': total_sum, 'count': total_count+total_sum, 'persent': persent})
+            self.write({'persent': persent})
