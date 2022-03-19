@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "9af26468-d626-4cf3-8c1a-cee09462b4c9",
+		"name": "test-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"qwerty\": 12,\n    \"abc\": 12\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/get?key=eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/remove?key=eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ==",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/remove?key=eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"remove"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/remove?key=eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ==",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"qwerty\": 11,\n    \"abc\": 11\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/update?key=eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"update"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "eyJxd2VydHkiOiAxMiwgImFiYyI6IDEyfQ=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/statistic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/statistic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"statistic"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
